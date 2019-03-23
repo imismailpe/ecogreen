@@ -3,12 +3,13 @@ body{
 	background-image: url(https://wecareroyalaire.com/wp-content/uploads/2018/04/background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	position: relative;
 }
 .multicoltext{
 	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    list-style-type: none;
 }
 .bg-color{
 	background-color: white;
@@ -42,7 +43,6 @@ body{
 	padding: 1em;
 	margin: 1rem;
 }
-
 .whitetext{
 	color: white;
 }
@@ -54,4 +54,42 @@ body{
   background-color: black;
   text-align: left;
   color: #efefef;
+}
+.menu{
+	position: sticky;
+	top:0;
+	left: 0;
+	display: inline-block;
+	background-color: white;
+	width: 100%;
+	padding: 10px;
+	z-index: 999;
+}
+.menu-item{
+	float: left;
+	*display: inline;
+	zoom:1;
+	padding: 10px;
+	list-style-type: none;
+}
+.colblock:hover{
+	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,0.81) 100%);
+}
+.menu-item a{
+	float: left;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+.bigtext{
+	font-size: 1rem;
+}
+@media only screen and (min-width: 320px and max-width: 768px){
+	.menu{
+		width: 100%;
+	}
+	.menu-item{
+		width: 100%;
+		float: none;
+	}
 }
