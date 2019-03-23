@@ -69,8 +69,8 @@ body{
 	float: left;
 	*display: inline;
 	zoom:1;
-	padding: 10px;
 	list-style-type: none;
+	padding: 10px;
 }
 .colblock:hover{
 	background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgba(145,232,66,0.81) 100%);
@@ -82,14 +82,5 @@ body{
 	color: black;
 }
 .bigtext{
-	font-size: 1rem;
-}
-@media only screen and (min-width: 320px and max-width: 768px){
-	.menu{
-		width: 100%;
-	}
-	.menu-item{
-		width: 100%;
-		float: none;
-	}
+	font-size: 2rem;
 }
