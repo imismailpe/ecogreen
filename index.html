@@ -11,10 +11,13 @@
 
     <title>ECO GREEN Air Conditioning</title>
     <script type="text/javascript">
+      window.onload = function() {
+          loadContent("home.html");
+      };
       async function fetchHtmlAsText(url){
         return await (await fetch(url)).text();
       }
-      async function loadContent(url="home.html"){
+      async function loadContent(url){
         const contentDiv=document.getElementById("contentholder");
         contentDiv.innerHTML=await fetchHtmlAsText(url);
       };
