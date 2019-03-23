@@ -33,7 +33,7 @@ body{
 	margin: auto;
 }
 .blackbg{
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.8);
 	border: 1px solid black;
 	border-radius: 5px;
 	box-shadow: 0px 8px 11px -6px rgba(0,0,0,0.69);
