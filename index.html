@@ -14,19 +14,9 @@
       async function fetchHtmlAsText(url){
         return await (await fetch(url)).text();
       }
-      async function loadContent(url){
-        alert(url);
+      async function loadContent(url="home.html"){
         const contentDiv=document.getElementById("contentholder");
         contentDiv.innerHTML=await fetchHtmlAsText(url);
-      }
-      var loadContent2=(content="home")=>{
-        alert(content);
-        if (content==="home") {
-          document.getElementById("contentholder").innerHTML="<object type='text/html' data='home.html'></object>";
-        }
-        else if(content==="Gallery"){
-          document.getElementById("contentholder").innerHTML="<object type='text/html' data='gallery.html'></object>";
-        }
       }
     </script>
   </head>
@@ -40,10 +30,10 @@
   <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="pages\works.html">Works</a>
+        <a class="nav-link" href="#" onclick="loadContent('works.html')">Works</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#" onclick="loadContent('gallery.html')">Contact</a>
       </li>
       </li>
       <li class="nav-item">
