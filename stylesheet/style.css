@@ -6,13 +6,13 @@ body{
 	position: relative;
 }
 .multicoltext{
-	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	background-image: linear-gradient(to right top, #1e5ebe, #0090e6, #00b8cd, #00d883, #a8eb12);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
 }
 .bg-color{
-	background-color: white;
+	background-color: black;
 }
 .carousel-item img {
     object-fit:cover;
@@ -32,12 +32,13 @@ body{
 .row{
 	margin: auto;
 }
-.whitebg{
-	background-color: rgba(250, 250, 250, 0.9);
-	border: 1px solid white;
+.blackbg{
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 1px solid black;
 	border-radius: 5px;
 	box-shadow: 0px 8px 11px -6px rgba(0,0,0,0.69);
 	margin: auto;
+	color: white;
 }
 .contenttext{
 	padding: 1em;
@@ -51,7 +52,6 @@ body{
 }
 .footers{
   padding: 0.5rem;
-  background-color: black;
   text-align: left;
   color: #efefef;
 }
@@ -60,7 +60,6 @@ body{
 	top:0;
 	left: 0;
 	display: inline-block;
-	background-color: white;
 	width: 100%;
 	padding: 5px;
 	z-index: 999;
@@ -79,8 +78,5 @@ body{
 	float: left;
 	display: block;
 	text-decoration: none;
-	color: black;
-}
-.bigtext{
-	font-size: 2rem;
+	color: white;
 }
