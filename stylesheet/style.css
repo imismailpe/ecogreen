@@ -6,7 +6,7 @@ body{
 	position: relative;
 }
 .multicoltext{
-	background-image: linear-gradient(to right top, #1e5ebe, #0090e6, #00b8cd, #00d883, #a8eb12);
+	background-image: linear-gradient(to right top, #00bcff, #00d2f9, #00e3cc, #00ec81, #a8eb12);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     list-style-type: none;
@@ -78,5 +78,8 @@ body{
 	float: left;
 	display: block;
 	text-decoration: none;
+	color: white;
+}
+a{
 	color: white;
 }
